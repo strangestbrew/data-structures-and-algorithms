@@ -16,9 +16,10 @@ console.log(greeting('hello'));
 
 
 const speaker = (message, callback) => {
-  let wordInput = string
-  take string and run it thru greeting(wordInput)
-  return wordInput as uppercase  
+  
+  //let wordInput = string
+  //take string and run it thru greeting(wordInput)
+  //return wordInput as uppercase  
   //take in string
   //return string in all caps by invoking greeting
 };
