@@ -14,17 +14,13 @@ const greeting = (word) => {
 };
 console.log(greeting('hello'));
 
-
+//This does not work TODO: check syntax and logic
 const speaker = (message, callback) => {
-  
-  //let wordInput = string
-  //take string and run it thru greeting(wordInput)
-  //return wordInput as uppercase  
-  //take in string
-  //return string in all caps by invoking greeting
+	let message === 'string';
+	callback = message + `${greeting}`;
+	return message + `${greeting}` 
 };
-console.log(speaker());
-
+console.log(speaker('hello', 'you'));
 
 
 /* ------------------------------------------------------------------------------------------------
