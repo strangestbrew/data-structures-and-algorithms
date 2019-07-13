@@ -35,12 +35,11 @@ const a = [1, 2, 3];
 appendFirstToLast(a);
 console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
-//why isn't this working when I uncomment the const?
-//const appendFirstToLast = (arr) => {
-  let thing = ['cat', 'dog', 'bunny', 'fish'];
-  thing.push(thing[0]);
-  console.log(thing);  
-//}
+
+const appendFirstToLast = (arr) => {
+  return arr.push(arr[0]);
+ 
+}
 
 
 describe('Testing challenge 2', () => {
@@ -67,7 +66,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-  // Solution code here...
+  return obj.yearBorn = year; //won't test w/out return statement
 };
 
 /* ------------------------------------------------------------------------------------------------
