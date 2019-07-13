@@ -9,16 +9,13 @@ Then, write a function named speaker that takes in a string and a callback funct
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  word = word.toUpperCase();
-  return word;
+  return word.toUpperCase();
 };
 console.log(greeting('hello'));
 
 //This does not work TODO: check syntax and logic
 const speaker = (message, callback) => {
-	let message === 'string';
-	callback = message + `${greeting}`;
-	return message + `${greeting}` 
+  return greeting(message);
 };
 console.log(speaker('hello', 'you'));
 
@@ -40,11 +37,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  return arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for (let  = i; i < time; i++) {
+    addValue(arr, num);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
