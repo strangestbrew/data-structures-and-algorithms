@@ -13,7 +13,7 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  let regex = /[0-9]/g;
+  let regex = /[0-9]/;
   return regex.test(input); //true
 };
 
@@ -26,7 +26,7 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  let regex = /([A-Z]+)/;
+  let regex = /\b[A-Z]/gm;
   return regex.test(str);
 };
 
@@ -37,7 +37,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  let regex = /[A-Z][a-z]/
+  let regex = 
 };
 
 /* ------------------------------------------------------------------------------------------------
