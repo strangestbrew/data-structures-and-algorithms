@@ -25,9 +25,15 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
+//it's still weird, yo
 const isCapitalized = (str) => {
-  let regex = /\b[A-Z]/gm;
-  return regex.test(str);
+  let regex = /\b[A-Z]\w+/gm;
+  if (str.match(regex)) {
+    return str.match(regex)
+  }
+  else {
+    return [];
+   }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,7 +43,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  let regex = 
+
 };
 
 /* ------------------------------------------------------------------------------------------------
