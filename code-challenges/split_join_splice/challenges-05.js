@@ -15,6 +15,7 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
+  //str.split(0);
   // Solution code here...
   return result;
 };
