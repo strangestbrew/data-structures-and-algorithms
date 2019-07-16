@@ -19,6 +19,8 @@ const getCourseKeys = (obj) => {
 };
 
 
+//npm test is running for the regex exercise, so I don't know if this actually runs
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 Use the characters data below for the remainder of the challenges.
