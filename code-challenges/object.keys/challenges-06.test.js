@@ -15,7 +15,7 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   finalExam: true };
 
   const getCourseKeys = (obj) => {
-    return obj.keys(courseInfo);
+    return object.keys(courseInfo);
   };
   
 describe('Testing challenge 1', () => {
@@ -80,9 +80,10 @@ let characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  object.values.house(characters).forEach(value);
   return houses;
 };
+
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 3
