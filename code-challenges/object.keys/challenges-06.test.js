@@ -14,11 +14,16 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true };
 
-const getCourseKeys = (obj) => {
-  return obj.keys(courseInfo);
-};
-
-
+  const getCourseKeys = (obj) => {
+    return obj.keys(courseInfo);
+  };
+  
+describe('Testing challenge 1', () => {
+  test('It should return the keys from an object', () => {
+    expect(getCourseKeys(courseInfo)).toStrictEqual([ 'name', 'duration', 'topics', 'finalExam' ]);
+  });
+});
+  
 //npm test is running for the regex exercise, so I don't know if this actually runs
 
 /* ------------------------------------------------------------------------------------------------
@@ -168,11 +173,6 @@ Run your tests from the console: jest challenges-06.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
-  test('It should return the keys from an object', () => {
-    expect(getCourseKeys(courseInfo)).toStrictEqual([ 'name', 'duration', 'topics', 'finalExam' ]);
-  });
-});
 
 describe('Testing challenge 2', () => {
   test('It should return an array of the names of the houses', () => {
