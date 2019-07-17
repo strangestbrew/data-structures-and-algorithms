@@ -1,5 +1,7 @@
 'use strict';
 
+import { objectExpression } from "@babel/types";
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -84,7 +86,10 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 ------------------------------------------------------------------------------------------------ */
 
 const sortNumbersByLength = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => {
+    return a.length - b.length
+  });
+  return arr;
 };
 
 /*-----------------------------------------------------------------------------------------------
@@ -106,7 +111,12 @@ const people = [
 ];
 
 const sortPeople = (arr) => {
-  // Solution code here...
+  return arr.sort((a,b) => {
+    if (a.lastName.toLowerCase > b.lastName.toLowerCase){ 
+      return -1};
+    if (b.lastName.toLowerCase > a.lastName.toLowerCase){
+      return 1};
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
