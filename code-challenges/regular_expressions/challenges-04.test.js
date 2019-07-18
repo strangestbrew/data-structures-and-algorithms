@@ -33,7 +33,7 @@ const isCapitalized = (str) => {
   }
   else {
     return [];
-   }
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -41,10 +41,17 @@ CHALLENGE 3
 
 Write a function named citiesAtoJ that takes in an array of city names and uses a regular expression pattern to return a new array containing any cities that begin with the letters A through J, inclusive.
 ------------------------------------------------------------------------------------------------ */
-
 const citiesAtoJ = (arr) => {
-
+  const newArr = [];
+  let regex = /^\b[A-J]\w*/g;
+  arr.forEach((element) => {
+    if (element.match(regex)) {
+      newArr.push(element);
+    }
+  })
+  return newArr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -59,7 +66,9 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  // Solution code here...
+  let regex = /\b(oct)/gi;
+  if (input.test(regex))
+    return true;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -73,7 +82,14 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  // Solution code here...
+  let arr = [];
+  let regex = /([a-z0-9]+|[[:punct:]])()/g;
+  if (str.match(regex)) {
+    return arr.push(str.match(regex));
+  }
+  else {
+    return [];
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
