@@ -1,5 +1,7 @@
 'use strict';
 
+import { objectExpression } from "@babel/types";
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -49,8 +51,12 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetizeBetter = (arr) => {
-  // Solution code here...
+  arr.sort( (a,b) => {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+  })
+  return arr;
 };
+//solution code from https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-in-javascript
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -66,8 +72,10 @@ Here is an example of the input:
 ------------------------------------------------------------------------------------------------ */
 
 const sortByPrice = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => (a.price > b.price) ? 1: -1 )
+  return arr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -78,7 +86,10 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 ------------------------------------------------------------------------------------------------ */
 
 const sortNumbersByLength = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => {
+    return a.length - b.length
+  });
+  return arr;
 };
 
 /*-----------------------------------------------------------------------------------------------
@@ -100,7 +111,12 @@ const people = [
 ];
 
 const sortPeople = (arr) => {
-  // Solution code here...
+  return arr.sort((a,b) => {
+    if (a.lastName.toLowerCase > b.lastName.toLowerCase){ 
+      return -1};
+    if (b.lastName.toLowerCase > a.lastName.toLowerCase){
+      return 1};
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
