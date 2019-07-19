@@ -1,6 +1,6 @@
 'use strict';
 
-import { objectExpression } from "@babel/types";
+import { objectExpression, arrayExpression } from "@babel/types";
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
@@ -14,10 +14,17 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true };
 
-const getCourseKeys = (obj) => {
-  return obj.keys(courseInfo);
-};
-
+  const getCourseKeys = (obj) => {
+    return Object.keys(obj)
+  };
+  
+describe('Testing challenge 1', () => {
+  test('It should return the keys from an object', () => {
+    expect(getCourseKeys(courseInfo)).toStrictEqual([ 'name', 'duration', 'topics', 'finalExam' ]);
+  });
+});
+  
+//npm test is running for the regex exercise, so I don't know if this actually runs
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -73,9 +80,12 @@ let characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  arr.forEach(item => {
+    houses.push(item.house);
+  })
   return houses;
 };
+
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -90,8 +100,10 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
+  if (character.name && character.children.length = true);
+  return object.values(hasChildrenValues);
 };
+//help
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -166,11 +178,6 @@ Run your tests from the console: jest challenges-06.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
-  test('It should return the keys from an object', () => {
-    expect(getCourseKeys(courseInfo)).toStrictEqual([ 'name', 'duration', 'topics', 'finalExam' ]);
-  });
-});
 
 describe('Testing challenge 2', () => {
   test('It should return an array of the names of the houses', () => {
