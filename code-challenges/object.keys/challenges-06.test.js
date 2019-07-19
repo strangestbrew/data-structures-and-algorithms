@@ -1,6 +1,6 @@
 'use strict';
 
-import { objectExpression } from "@babel/types";
+import { objectExpression, arrayExpression } from "@babel/types";
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
@@ -15,7 +15,7 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   finalExam: true };
 
   const getCourseKeys = (obj) => {
-    return object.keys(courseInfo);
+    return Object.keys(obj)
   };
   
 describe('Testing challenge 1', () => {
@@ -80,7 +80,9 @@ let characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  object.values.house(characters).forEach(value);
+  arr.forEach(item => {
+    houses.push(item.house);
+  })
   return houses;
 };
 
@@ -98,8 +100,10 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
+  if (character.name && character.children.length = true);
+  return object.values(hasChildrenValues);
 };
+//help
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
