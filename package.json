@@ -1,8 +1,8 @@
 {
-  "name": "3-code-challenges",
+  "name": "challenges",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "review.test.js",
   "scripts": {
     "test": "jest --coverage --verbose",
     "watch": "jest --watchAll"
