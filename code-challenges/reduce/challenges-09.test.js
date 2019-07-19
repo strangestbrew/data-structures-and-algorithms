@@ -134,8 +134,16 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  // Solution code here...
+  return arr.reduce((acc, value) => {
+  if (Object.keys(value).includes('children')) {
+  acc +=  value.children.length;
+  return acc;
+   }
+  } ,0),
 };
+
+
+  
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
