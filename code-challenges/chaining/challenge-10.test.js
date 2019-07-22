@@ -15,6 +15,8 @@ const count = (target, input) => {
   // Solution code here...
 };
 
+//some chaining stuff goes here
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
