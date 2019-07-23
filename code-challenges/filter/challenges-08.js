@@ -16,6 +16,8 @@ const oddValues = (arr) => {
   }
 };
 
+//halp
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -26,9 +28,11 @@ The callback function to filter should include or utilize a regular expression p
 For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 'hound'].
 ------------------------------------------------------------------------------------------------ */
 
-
 const filterStringsWithVowels = (arr) => {
-  // Solution code here...
+  let regex = /([aeiouy]+)/;
+  return arr.filter(str =>{
+    regex.test(str);
+  })
 };
 
 
@@ -41,8 +45,9 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  // Solution code here...
+  return arr.filter(value !== forbiddenValues.includes(value) );
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -84,8 +89,9 @@ const snorlaxData = {
 };
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
-  // Solution code here...
+  return arr.filter(snorlax => snorlax.baseStat > minBaseStat);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
