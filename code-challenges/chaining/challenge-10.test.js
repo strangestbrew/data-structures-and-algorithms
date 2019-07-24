@@ -10,12 +10,20 @@ Note: You might need to use the same method more than once.
 
 For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
-
-const count = (target, input) => {
-  // Solution code here...
+const count = (arr, item) => {
+  let thing = 0;
+  arr.reduce((acc, arr) => {
+    for (let i = 0; i <arr.length; i++) {
+      if (arr[i] = item) {
+        acc++
+      }
+    }
+  }, thing),
+  return thing;
 };
 
-//some chaining stuff goes here
+//I did this once for the whiteboard challenge on monday, ugh
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
