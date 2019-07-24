@@ -9,8 +9,10 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
+  return arr.reduce(acc => ++acc, 0);
 };
+
+//TODO - is this right???
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -69,7 +71,11 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+  let newArray = arr.reduce( (acc, character) => {
+    acc.push(character.name);
+    return acc;
+  }, [])
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -81,8 +87,10 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  return 
 };
+
+//TODO - come back to this one!!!
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -139,9 +147,11 @@ const countNumberOfChildren = (arr) => {
     ? acc +=  value.children.length
     : acc
    }
-  } ,0),
+  }, 0);
 };
 
+
+//did this one together as a class with Jacob, but my linter is going crazy - thoughts? 
 
   
 
@@ -154,8 +164,13 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-  // Solution code here...
+  return arr.reduce((acc, element) => {
+    acc++
+  } )
 };
+
+//ok clearly I don't get reduce at all
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -175,7 +190,13 @@ const isPrime = (value) => {
 };
 
 const countPrimeNumbers = (arr) => {
-  // Solution code here...
+  return arr.reduce((acc, value) => {
+    if (isPrime(value) === true) {
+    return acc++}
+    else {
+      return acc
+    }
+  }, 0 );
 };
 
 /* ------------------------------------------------------------------------------------------------
