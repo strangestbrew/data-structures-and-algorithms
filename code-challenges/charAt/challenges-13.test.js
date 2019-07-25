@@ -118,8 +118,14 @@ For example, ['Tuesday', 'Monday', 'Wednesday and Thursday', 'Tuesday 2', 'Thurs
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 const sortByDay = (arr) => {
-  // Solution code here...
+  return daysOfWeek.map(day => {
+    return arr.filter((eventString) => {
+      return eventString.toLowerCase().includes(day.toLowerCase());
+    })
+  })
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 10 - Stretch Goal
