@@ -120,7 +120,11 @@ const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sat
 const sortByDay = (arr) => {
   return daysOfWeek.map(day => {
     return arr.filter((eventString) => {
+<<<<<<< HEAD
       return eventString.toLowerCase().includes(day.toLowerCase());
+=======
+      return eventString.includes(day);
+>>>>>>> 73f69d96e466e978081fb8958f3e58f76844b103
     })
   })
 };
