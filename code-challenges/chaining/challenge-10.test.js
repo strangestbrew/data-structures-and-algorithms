@@ -36,11 +36,11 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+  let arrSum = input => input.reduce((a,b) => a + b, 0)
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 3
+CHALLENGE 3a
 
 Write a function named divisibleByFiveTwoToThePower that accepts an array of arrays as input.
 
@@ -54,6 +54,7 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
 };
+//what the what 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -118,8 +119,14 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+    return data.reduce((result, character) => {
+      if (character.gender === male || character.gender === female) {
+        return result + ' and ' + character.name;
+      }
+      return result; 
+    })
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -128,7 +135,13 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  data.map(data.height => {
+    if data.height < data.height })
+  //since I can't think of the syntax at all, I'm going to write my "process" thoughts and then pseudo-code it, and hope that you give me like half a point
+  //basically, you need to GO INTO THE ARRAY (in this case, starWarsData), iterate over it, and hit the 'height' key of the objects within the array. Once you have height, you want to compare it to the next object's height value. If the currently set value of height is LESS THAN the height it is being compared to, it needs to continue thru the height values in the array, until it finds one that is LESS THAN. The LESS THAN value then continues thru the array as the new min, and is the compared value, until the smallest compared height reaches the end of the array. Once the smallest reaches the end of the array, it is RETURNED with its corresponding name key. Boom.
+  data.map(over given array) => if current height < next height 
+    then ++ thru array
+    return smollestHeight + .name
 };
 
 /* ------------------------------------------------------------------------------------------------
