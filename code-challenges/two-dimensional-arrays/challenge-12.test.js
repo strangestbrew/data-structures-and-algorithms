@@ -22,9 +22,16 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
-const grandTotal = (stores) => {
-  // Solution code here...
-
+const grandTotal = (cookieStores) => {
+  let emptyArr = [];
+  for (let i = 0; i < 12; i++) {
+    let sum = 0;
+    for (let j = 0; j < cookieStores.length; j++) {
+      sum += cookieStores[j][i];
+    }
+    emptyArr.push(sum);
+  }
+  return emptyArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,7 +45,14 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  let emptyArr = [];
+  for (let i = 0; i < 12; i++) {
+    let newObj = {};
+    newObj.sales = data[i] + ' cookieStores';
+    newObj.time = hours[i];
+    emptyArr.push(newObj);
+  }
+  return emptyArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -60,7 +74,8 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  return arr.filter(thing => thing.store == 'Pet Store')[0].item
+    .filter(item => item.name == 'Treats')[0].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +99,7 @@ The top row of the board is considered row zero and row numbers increase as they
 const battleship = (board, row, col) => {
   //  Solution code here...
 };
-
+//hahahah what??
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -94,7 +109,14 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 ------------------------------------------------------------------------------------------------ */
 
 const calculateProduct = (numbers) => {
-  // Solution code here...
+  return numbers
+    .map(thing => {
+      if (!thing.length)
+        return
+      else {
+        return thing.reduce((a, b) => a*b )
+      }
+    }).reduce((a, b) => a*b);
 };
 
 /* ------------------------------------------------------------------------------------------------

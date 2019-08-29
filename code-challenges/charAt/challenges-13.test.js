@@ -11,7 +11,9 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 ------------------------------------------------------------------------------------------------ */
 
 const firstLetters = (arr) => {
+
   return arr.map((str) => str.charAt[0]);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -131,8 +133,18 @@ For example, ['Tuesday', 'Monday', 'Wednesday and Thursday', 'Tuesday 2', 'Thurs
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 const sortByDay = (arr) => {
-  // Solution code here...
+  return daysOfWeek.map(day => {
+    return arr.filter((eventString) => {
+
+      return eventString.toLowerCase().includes(day.toLowerCase());
+
+      return eventString.includes(day);
+
+    })
+  })
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 10 - Stretch Goal
