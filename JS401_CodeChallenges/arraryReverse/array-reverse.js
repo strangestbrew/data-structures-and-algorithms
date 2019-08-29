@@ -2,7 +2,7 @@
 
 //Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
-const reverseArrayInPlace = module.exports = {};
+
 
 
 // let arr = [1, 3, 5, 7, 2000, -16];
@@ -18,5 +18,9 @@ function reverseArrayInPlace(arr) {
   console.log('line 12');
   return arr;
 }
-reverseArrayInPlace();
 
+// reverseArrayInPlace();
+
+
+
+module.exports = reverseArrayInPlace;
