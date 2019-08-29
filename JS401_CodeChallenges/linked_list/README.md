@@ -1,5 +1,5 @@
-# Code Challenges 
-Linked Lists
+# Code Challenge 
+Linked List (insert at head)
 
 ## Deployment Tutorial
 
@@ -8,9 +8,9 @@ Lyndsey Thomas
 
 ### Links and Resources
 * [submission PR]()
-* [travis](n/a for this lab)
-* [front-end](http://localhost:3000/)
-* [heroku] (n/a for this lab)
+* [travis](n/a)
+* [front-end](n/a)
+* [heroku] (n/a)
 
 #### Documentation
 * [jsdoc]()
