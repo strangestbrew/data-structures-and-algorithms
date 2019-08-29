@@ -21,6 +21,7 @@ Lyndsey Thomas
 ### Setup
 
 #### `.env` requirements
+jest
 
 #### Running the app
 * `npm start`
