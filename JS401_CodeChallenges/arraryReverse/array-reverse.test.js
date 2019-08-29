@@ -1,6 +1,6 @@
 'use strict';
 
-const arrayReverse = require('./array-reverse');
+const reverseArrayInPlace = require('./array-reverse');
 
 describe('reverseArrayInPlace', () => {
     test('When given an even array, the contents are reversed', () => {
