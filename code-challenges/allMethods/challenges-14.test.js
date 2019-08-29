@@ -1,5 +1,7 @@
 'use strict';
 
+import { NodePath } from "@babel/core";
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -9,7 +11,7 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 ------------------------------------------------------------------------------------------------ */
 
 const toTitleCase = (arr) => {
-  // Solution code here...
+  return arr.map((str) => str[0].toUpperCase() + str.slice(1) );
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +86,11 @@ let starWarsData = [{
 }];
 
 let biggerThanLuke = (arr) => {
-  // Solution code here...
+  if taller than luke skywalker {
+    return true;
+  } else {
+    nah;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
