@@ -1,5 +1,7 @@
 'use strict';
 
+import { stringLiteral } from "@babel/types";
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -9,7 +11,9 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 ------------------------------------------------------------------------------------------------ */
 
 const firstLetters = (arr) => {
-  
+
+  return arr.map((str) => str.charAt[0]);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -21,7 +25,9 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
-  // Solution code here...
+  return arr.filter( (str) => {
+    return str.includes(':)');
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,7 +39,9 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+  return arr.map( (str) => {
+    retrun str.replace('(', '').replace(' ', '').replace(')', '').replace('-','')
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -45,8 +53,14 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  // Solution code here...
+  for (let i = 0; i<str.length; i++){
+    if (i % 2 !== 0) {
+      return += result.str[i];
+    }
+  }
+  return result;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -55,7 +69,8 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  // Solution code here...
+  if arr.filter( str => str.includes(':)'));
+  return arr.length === result.length;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,7 +80,7 @@ Write a function named findAnything that takes in an array of strings, along wit
 ------------------------------------------------------------------------------------------------ */
 
 const findAnything = (arr, target) => {
-  // Solution code here...
+  return arr.filter(str => str.includes(target))
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,7 +90,7 @@ Write a function named findEvery that takes in an array of strings, along with a
 ------------------------------------------------------------------------------------------------ */
 
 const findEvery = (arr, target) => {
-  // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -120,11 +135,11 @@ const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sat
 const sortByDay = (arr) => {
   return daysOfWeek.map(day => {
     return arr.filter((eventString) => {
-<<<<<<< HEAD
+
       return eventString.toLowerCase().includes(day.toLowerCase());
-=======
+
       return eventString.includes(day);
->>>>>>> 73f69d96e466e978081fb8958f3e58f76844b103
+
     })
   })
 };
