@@ -1,5 +1,5 @@
 # Code-Challenge 01
-Array Reverse
+Array Reverse (in place)
 
 ## Deployment Tutorial
 
@@ -21,6 +21,7 @@ Lyndsey Thomas
 ### Setup
 
 #### `.env` requirements
+jest
 
 #### Running the app
 * `npm start`
