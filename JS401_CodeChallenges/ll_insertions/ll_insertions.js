@@ -1,4 +1,4 @@
-'use strict';
+'use strict';'use strict';
 
 const Node = require('./node');
 
@@ -6,7 +6,6 @@ class LinkedList {
   constructor(){
     this.head = null;
   }
-
 
   insertAtHead(value){
     const newHead = new Node(value);
@@ -23,20 +22,10 @@ class LinkedList {
    let current = this.head;
    while(current !== null) {
      console.log(current.value);
+     // SOMETHING ELSE n_n
      current = current.next;
    }
   }
 }
-
-let ll = new LinkedList();
-// add
-ll.push(235);
-ll.push(245);
-ll.push(123);
-
-ll.head;  //Object value: 235
-ll.head.next; //Object value: 245
-ll.head.next.next //object value: 123
-
 
 module.exports = LinkedList;

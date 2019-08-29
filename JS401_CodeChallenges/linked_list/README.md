@@ -1,5 +1,5 @@
-# Code-Challenge 01
-Array Reverse (in place)
+# Code Challenge 
+Linked List (insert at head)
 
 ## Deployment Tutorial
 
@@ -8,8 +8,9 @@ Lyndsey Thomas
 
 ### Links and Resources
 * [submission PR]()
-* [travis]()
-* [front-end]()
+* [travis](n/a)
+* [front-end](n/a)
+* [heroku] (n/a)
 
 #### Documentation
 * [jsdoc]()
@@ -21,12 +22,11 @@ Lyndsey Thomas
 ### Setup
 
 #### `.env` requirements
-jest
 
 #### Running the app
 * `npm start`
 * Endpoint: `/`
-  * Returns true or false
+  * Returns 
 * Endpoint: `/docs`
   * Renders Developer Documentation
   
@@ -34,10 +34,10 @@ jest
 * Unit Tests: `npm run test`
 * Lint Tests: `npm run lint`
 * Assertions Made
-  * Assert 
+  * Assertions
 * Assertions Remaining
   * ... Things I want to tests, but didn't yet.
 
 #### UML
 
-![UML Diagram](./uml.jpeg)
+![UML Diagram]()
