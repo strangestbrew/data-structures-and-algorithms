@@ -265,6 +265,7 @@ test('It should return the name of the shortest character', () => {
 =======
 =======
 
+<<<<<<< HEAD
 
 'use strict';
 
@@ -798,3 +799,5 @@ describe('Testing challenge 5', () => {
 
 >>>>>>> d21522ab4e3a44dc02ab5a192e6333c46c395a27
 });
+=======
+>>>>>>> 9c69245edb6734eaaeb38383746b6311455c4e94
