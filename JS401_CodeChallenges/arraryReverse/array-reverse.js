@@ -3,6 +3,7 @@
 //Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
 
+
 function reverseArrayInPlace(arr) {
   for (var i = 0; i <= (arr.length - 1) / 2; i++) {
       let indexValue = arr[i];
@@ -11,9 +12,10 @@ function reverseArrayInPlace(arr) {
   }
   console.log('line 12');
   return arr;
-};
 
 
-module.exports = reverseArrayInPlace; 
+// reverseArrayInPlace();
 
 
+
+module.exports = reverseArrayInPlace;
