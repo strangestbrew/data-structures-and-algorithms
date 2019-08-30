@@ -24,3 +24,4 @@ describe('adds values in order/inserts at head', () => {
 });
 
 
+//traverse testing? 

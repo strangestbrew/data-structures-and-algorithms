@@ -8,7 +8,6 @@ class LinkedList {
     this.head = null;
   }
 
-
   insertAtHead(value){
     const newHead = new Node(value);
 
@@ -29,6 +28,4 @@ class LinkedList {
   };
 };
 
-
 module.exports = LinkedList;
-
