@@ -1,19 +1,26 @@
-const require = require('./linked-list.js');
+const LinkedList = require('./linked-list.js');
+
+let ll = new LinkedList();
+
+
+describe('create a new list', () => {
+    test('new list is created', () => {
+        expect(ll.head).toEqual(null);
+    });
+});
 
 describe('insert new node at head', () => {
     test('if current node points to null, insert a new node', () => {
-        const //write some tests!!
-        expect().toEqual();
+        ll.insertAtHead(5); //access method on instance of class 
+        expect(ll.head.value).toEqual(5);
+    });
+});
+
+describe('adds values in order/inserts at head', () => {
+    test('does it add values correctly', () => {
+        ll.insertAtHead(2)
+        expect(ll.head.value).toEqual(2);
     });
 });
 
 
-let ll = new LinkedList();
-// add
-ll.push(235);
-ll.push(245);
-ll.push(123);
-
-ll.head;  //Object value: 235
-ll.head.next; //Object value: 245
-ll.head.next.next //object value: 123
