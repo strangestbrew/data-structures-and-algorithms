@@ -28,6 +28,9 @@ class LinkedList {
   }
 }
 
+
+
+
 let ll = new LinkedList();
 // add
 ll.push(235);
@@ -40,3 +43,4 @@ ll.head.next.next //object value: 123
 
 
 module.exports = LinkedList;
+
