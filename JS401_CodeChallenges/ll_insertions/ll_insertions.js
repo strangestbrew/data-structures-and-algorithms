@@ -1,9 +1,11 @@
-'use strict';'use strict';
+'use strict';
 
 const Node = require('./node');
 
+
 class LinkedList {
   constructor(){
+    this._length = 0; 
     this.head = null;
   }
 
@@ -16,16 +18,15 @@ class LinkedList {
       newHead.next = this.head;
       this.head = newHead;
     }
-  }
+  };
 
   traverse() {
    let current = this.head;
    while(current !== null) {
      console.log(current.value);
-     // SOMETHING ELSE n_n
      current = current.next;
-   }
-  }
-}
+   };
+  };
+};
 
 module.exports = LinkedList;
