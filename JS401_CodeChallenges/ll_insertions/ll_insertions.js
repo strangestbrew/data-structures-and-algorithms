@@ -1,12 +1,14 @@
-'use strict';'use strict';
+'use strict';
 
 const Node = require('./node');
+
 
 class LinkedList {
   constructor(){
     this.head = null;
   }
 
+  //this function will insert a new node at the head of the ll
   insertAtHead(value){
     const newHead = new Node(value);
 
@@ -16,16 +18,29 @@ class LinkedList {
       newHead.next = this.head;
       this.head = newHead;
     }
+  };
+
+  //this function will insert a new node at the end of the ll
+  insertAtEnd(value){
+    if (this.head === null){
+      this.head = new Node(value);
+    } else {
+      if (current.next === null){
+        current.next = new Node(value);
+      }
+    }
   }
 
-  traverse() {
-   let current = this.head;
-   while(current !== null) {
-     console.log(current.value);
-     // SOMETHING ELSE n_n
-     current = current.next;
-   }
+  //this function inserts a new value after an existing one
+  insertAfterValue(newValue){
+    if (this.head === null){
+      return; //if the list is empty, stop
+    } else if(this.head.next === null){
+      this.head.next = new Node(newValue);
+    }
   }
-}
+
+
+};
 
 module.exports = LinkedList;
