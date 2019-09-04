@@ -1,28 +1,29 @@
 'use strict';
 
+//enqueue enqueue many dequeue peek empty instantiate
 
 class Queue {
-constructor() {
+  constructor() {
     this.items = [];
 
-}
+  }
 }
 
+//enqueue 
 Queue.prototype.enqueue = function (value) {
-    this.items.push(value);
+   this.items.push(value);
 };
-
+  
+//dequeue
 Queue.prototype.dequeue = function (value) {
-return this.items.shift();
+  return this.items.shift();
+};
+  
+//peek function
+Queue.prototype.peek = function(value) {
+  return items[0];
 };
 
-// front function 
-front() 
-{ 
-if(this.isEmpty()) 
-    return 'Empty!'; 
-return this.items[0]; 
-} 
 
 const queue = new Queue();
 
