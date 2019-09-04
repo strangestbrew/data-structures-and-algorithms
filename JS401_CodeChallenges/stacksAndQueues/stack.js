@@ -1,7 +1,3 @@
-'use strict';
-
-const Node = require('./node');
-
 // push pop push multiple empty peek instantiate empty
 
 // Stack class 
