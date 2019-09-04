@@ -1,144 +1,82 @@
 'use strict';
 
-function Stack() {
-this.top = null;
-}
+const node = require('./node');
 
-function Node() {
-this.value = value; 
-this.next = null;
-}
-
-Stack.prototype.push = function(data) {
-const newTop = new Node(data);
-if (this.top) {
-    newTop.next = this.top;
-} 
-this.top = newTop;
-
-return this.top; 
-}
-
-Stack.prototype.pop = function(){
-if (this.top) {
-    let itemToPop = this.top; 
-    this.top = this.top.next;
-}
-return itemToPop; 
-}
-
-class Stack {
-constructor() {
-    this.top = null; 
-}
-}
-
-const stack = new Stack();
-
-stack.push(10);
-stack.push(20);
-stack.push(30);
-
-stack.pop();
-stack.pop();
-
-console.log(stack);
-
-
-class Queues {
-constructor() {
-    this.front = null;
-    this.rear = null; 
-}
-
-enqueue(value){
-const newRear = new Node(value);
-    if (this.rear) {
-        newRear.next = this.rear;
-        this.rear = newRear;
-    }
-    
-    else {
-    this.front = newRear; //edge case? 
-    }
-    this.rear = newRear;
-
-    return newRear; 
-}   
-
-dequeue(value){
-    let current = this.rear;
-    let valueDequeued; 
-    while(current !== null) {
-        if (current.next === this.front){
-            current.next = null;
-            this.front = current; 
-        }
-        current = current.next;
-    }
-    return valueDequeued;
-    
-}
-}
-
-const queue = new Queue();
-queue.enqueue(20);
-queue.enqueue(40);
-queue.enqueue(60);
-const dequeue = 
-console.log(queue);
-console.log(queue, queue.front);
-
-
-
-
-
-
-
-
-
-
-
-let queue = [];
-
-queue.unshift(1);
-
-queue.unshift(2);
-
-queue.unshift(3);
-
-queue.pop();
-
-queue.push();
-
-class Node {
-//pointer to
-//pointer from 
-}
-
-class Stack {
-constructor() {
-    storage = []; //linkedlist instead of array
-    this.storage = new LinkedList(); 
-}
-
-push(value){
-    this.storage.push(value);
-    this.append(value);
-
-}
-pop(){
-    return this.removeAtEnd(); //code this
-    // return this.storage.pop();
-};
-
-//isEmpty();
-//peek();
-//length(); 
-}
 
 class Queue {
-enqueue()
-dequeue()
-peek()
+constructor() {
+    this.items = [];
 }
+}
+
+Queue.prototype.enqueue = function (value) {
+    this.items.push(value);
+};
+
+Queue.prototype.dequeue = function (value) {
+return this.items.shift();
+};
+
+const queue = new Queue(); //TODO: unreachable code, fix
+
+queue.enqueue(20);
+queue.enqueue(30);
+queue.enqueue(40);
+
+queue.unshift(1);
+queue.unshift(2);
+queue.unshift(3);
+
+// push pop push multiple empty peek instantiate empty
+
+// Stack class 
+class Stack { 
+    constructor() 
+    { 
+      this.items = []; 
+      this.top = value; 
+    } 
+  };
+  
+  // push function 
+  Stack.prototype.push(value) 
+  { 
+    this.items.push(value); 
+  };
+  
+  // pop function 
+  Stack.prototype.pop(value) 
+  {
+    if (this.items.length == 0)
+      throw new Error('Empty!')
+  };
+    
+  
+  // peek function 
+  Stack.prototype.peek() //TODO: fix this unreachable code!
+  {  
+    return this.items[this.items.length - 1]; 
+  };
+  
+  
+  let stack = new Stack(); 
+  
+  // Adding element to the stack 
+  stack.push(10); 
+  stack.push(20); 
+  stack.push(30); 
+  
+    
+  // Printing the stack element 
+  // prints [10, 20, 30] 
+  console.log(stack.printStack()); 
+    
+  // returns 30 
+  console.log(stack.peek()); 
+    
+  // returns 30 and remove it from stack 
+  console.log(stack.pop()); 
+    
+  // returns [10, 20] 
+  console.log(stack.printStack()); 
+  
