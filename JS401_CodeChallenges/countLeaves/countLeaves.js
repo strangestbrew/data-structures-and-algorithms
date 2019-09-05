@@ -38,3 +38,24 @@ class Tree {
 	  } 
   }
 };
+
+//after class code review
+function findLeaf(current){
+  let count = 0; 
+  if (current.left === null && current.right === null){
+    count++;
+  } else {
+    if (current.left) count += findLeaf(current.left)
+    if (current.right) count += findLeaf(current.right);
+  } 
+  return count; 
+}
+
+function findLeafQueue(root){
+  let count = 0;
+  let nodeQueue = [];
+  nodeQueue.push(root);
+  while(nodeQueue.length){
+    nodeQueue.shift();
+  }
+}
