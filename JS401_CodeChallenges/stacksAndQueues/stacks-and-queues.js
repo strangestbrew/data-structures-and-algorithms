@@ -50,11 +50,12 @@ class Stack {
   {
     if (this.items.length == 0)
       throw new Error('Empty!')
+    else {
+      return this.items.pop();
+    }
   };
 
-
 };
-
   
   let stack = new Stack(); 
   
