@@ -1,43 +1,15 @@
-# Code Challenge 
-Linked List (insert at head)
+# Challenge Summary
+LL Insertions
 
-## Deployment Tutorial
+## Challenge Description
+Insert a node into a linked list
 
-### Author:
-Lyndsey Thomas
+## Approach & Efficiency
+Using a Contsructor function, insert a new node at the head of a linked list. 
+Big O:
+Time: O(1)
+Space: O(n)
 
-### Links and Resources
-* [submission PR]()
-* [travis](n/a)
-* [front-end](n/a)
-* [heroku] (n/a)
-
-#### Documentation
-* [jsdoc]()
-
-### Modules
-
-##### Exported Values and Methods
-
-### Setup
-
-#### `.env` requirements
-
-#### Running the app
-* `npm start`
-* Endpoint: `/`
-  * Returns 
-* Endpoint: `/docs`
-  * Renders Developer Documentation
-  
-#### Tests
-* Unit Tests: `npm run test`
-* Lint Tests: `npm run lint`
-* Assertions Made
-  * Assertions
-* Assertions Remaining
-  * ... Things I want to tests, but didn't yet.
-
-#### UML
-
-![UML Diagram]()
+## Solution
+<!-- Embedded whiteboard image -->
+No image for this problem 

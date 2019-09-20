@@ -1,4 +1,4 @@
-const LinkedList = require('./linked-list.js');
+const LinkedList = require('./ll_insertions');
 
 let ll = new LinkedList();
 

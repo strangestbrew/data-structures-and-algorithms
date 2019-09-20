@@ -1,3 +1,11 @@
-Code Challenge: Tic Tac Toe
+# Challenge Summary
+Tic Tac Toe Winner
 
-Restated Problem Domain: Determine in a Tic Tac Toe game who was the winner - x, o, or neither
+## Challenge Description
+Using nested arrays, determine the winner of a tic tac toe challenge
+
+## Approach & Efficiency
+Nested arrays and lots of OR statements 
+
+## Solution
+See attached 
